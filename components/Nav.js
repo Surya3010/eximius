@@ -24,8 +24,8 @@ const Nav = () => {
           Eximius
         </motion.span>
       </motion.h1>
-      {navBarContent.map((val)=>{return(
-          <Link href={`/${val}`} style={{textTransform: "capitalize", fontWeight:'700'}}><span>{val}</span></Link>
+      {navBarContent.map((val,key)=>{return(
+          <Link key={key} href={`/${val}`} style={{textTransform: "capitalize", fontWeight:'700'}}><span>{val}</span></Link>
         )})}
       <ul className={NavStyle.iconlinks}>
         <li>

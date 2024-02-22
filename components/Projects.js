@@ -12,7 +12,7 @@ const Projects = () => {
       <h1>Projects</h1>
 
       <div className={ProjectStyles.cardgroup}>
-        {projectContent.map((content)=>{return(<div className="card card1">
+        {projectContent.map((content,key)=>{return(<div key={key} className="card card1">
           <Image
             src={content?.imgUrl}
             alt="Picture of the Events"
