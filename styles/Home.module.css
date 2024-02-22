@@ -7,11 +7,15 @@
 }
 
 .home .introtext {
-  max-width: 600px;
   min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .home .introtext h1 {
+  /* max-width: 600px; */
   font-weight: 700;
   font-size: clamp(2.5rem, 5vw, 4rem);
 }
@@ -24,4 +28,20 @@
   color: rgba(255, 255, 255, 0.8);
   font-size: 1.1rem;
 }
-
+.registerbtn {
+  width: 100px;
+  height: 40px;
+  border-radius: 45px;
+  background: transparent;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  color: white;
+  border: 3px solid rgba(220, 70, 6, 1);
+  font-weight: 100;
+  font-size: 1rem;
+  font-family: 'Courier New', Courier, monospace;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+.registerbtn:hover{
+  background: rgba(220, 70, 6, 1);
+}

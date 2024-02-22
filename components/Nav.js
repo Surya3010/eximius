@@ -5,6 +5,7 @@ import Link from "next/link";
 import NavStyle from "../styles/nav.module.css";
 
 import { motion } from "framer-motion";
+import { navBarContent } from "../constants/constants";
 
 const Nav = () => {
   return (
@@ -20,26 +21,13 @@ const Nav = () => {
             stiffness: 150,
           }}
         >
-          P
+          Eximius
         </motion.span>
-        ortfolio
       </motion.h1>
-      <ul>
-        <li>
-          <Link href="/">Home</Link>
-        </li>
-        <li>
-          <Link href="/about">About</Link>
-        </li>
-        <li>
-          <Link href="/contact">Touch</Link>
-        </li>
-      </ul>
-
+      {navBarContent.map((val)=>{return(
+          <Link href={`/${val}`} style={{textTransform: "capitalize", fontWeight:'700'}}><span>{val}</span></Link>
+        )})}
       <ul className={NavStyle.iconlinks}>
-        <li>
-          <i className="fab fa-github"></i>
-        </li>
         <li>
           <i className="fab fa-instagram"></i>
         </li>

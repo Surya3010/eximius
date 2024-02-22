@@ -53,7 +53,7 @@ const Layout = ({ children }) => {
           as="font"
           crossOrigin=""
         />
-        <title>Portfolio</title>
+        <title>Eximius</title>
       </Head>
 
       <div className={LayoutStyle.container}>
